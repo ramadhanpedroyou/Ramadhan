@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi - Rizki Ramadhan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cinzel', 'Segoe UI', Georgia, serif;
+        }
+        
+        body {
+            /* MENGGUNAKAN GAMBAR BACKGROUND TAMBAHAN BERAGAM TEKSTUR MERAH EMAS MEWAH */
+            background-image: linear-gradient(rgba(44, 4, 11, 0.85), rgba(20, 1, 4, 0.95)), 
+                              url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f5eedc;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Desain Header / Hero Section Mewah */
+        .hero {
+            background: linear-gradient(135deg, #72091e, #3f000c);
+            color: #f7d070;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 12px 12px 0 0;
+            border: 2px solid #d4af37;
+            border-bottom: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        /* Detail Ornamen Garis Emas Khas Kerajaan */
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #d4af37, transparent);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #d4af37;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #f9e7b9;
+            margin-top: 5px;
+        }
+
+        /* Desain Kotak Konten Beludru Merah Gelap */
+        section {
+            background: rgba(54, 5, 14, 0.9);
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            color: #d4af37;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 5px;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        /* Desain Tabel Biodata Emas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        th {
+            width: 35%;
+            color: #f9e7b9;
+            font-weight: 600;
+        }
+
+        td {
+            color: #f5eedc;
+        }
+
+        /* Desain Daftar Skill */
+        ul {
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #f5eedc;
+        }
+
+        /* Desain Link Kontak Kilau Emas */
+        .links a {
+            display: inline-block;
+            margin-right: 20px;
+            color: #d4af37;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #d4af37;
+            padding: 8px 16px;
+            border-radius: 4px;
+            background: rgba(212, 175, 55, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .links a:hover {
+            background: #d4af37;
+            color: #2c040b;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #a39274;
+            font-size: 0.9rem;
+        }
+
+        /* Desain Responsif Biar Rapi di HP */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            table, tr, td, th {
+                display: block;
+                width: 100%;
+            }
+            th {
+                border-bottom: none;
+                padding-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header / Hero Section -->
+        <header class="hero">
+            <img src="c:\Users\USER\Downloads\𝐸𝑚𝑚𝑎.jfif" alt="Foto Profil Rizki" class="profile-img">
+            <h1>Rizki Ramadhan (RR)</h1>
+            <p class="tagline">Kelas XI RPL | Calon Web Developer</p>
+        </header>
+
+        <!-- Tentang Saya -->
+        <section class="about">
+            <h2>Tentang Saya</h2>
+            <p>Saya Rizki Ramadhan, seorang siswa kelas XI Rekayasa Perangkat Lunak (RPL). Di waktu luang, saya sangat menikmati kegiatan menggambar dan menonton anime. Saya adalah tipe orang yang menghargai ketenangan, seperti sekadar bersantai, makan dengan tenang, atau beristirahat untuk menyegarkan pikiran. Saat ini, saya sedang memiliki rasa penasaran yang besar tentang dunia kerja dan bagaimana merancang karier masa depan yang paling cocok untuk saya. Sebagai pribadi yang ramah, saya selalu mengutamakan kerja sama dalam tim dan lebih fokus mencari solusi bersama daripada menyalahkan keadaan.</p>
+            <p style="margin-top: 20px; font-style: italic; color: #d4af37; border-left: 3px solid #d4af37; padding-left: 15px; background: rgba(212, 175, 55, 0.05);">
+                "Ketika menghadapi masalah, setidaknya pikirkan cara untuk tidak memperparahnya, bukan menyesalinya."
+            </p>
+        </section>
+
+        <!-- Biodata (Tabel) -->
+        <section class="biodata">
+            <h2>Biodata Diri</h2>
+            <table>
+                <tr>
+                    <th>Tempat, Tanggal Lahir</th>
+                    <td>Sungai Raya, 25 Agustus 2026</td>
+                </tr>
+                <tr>
+                    <th>Alamat</th>
+                    <td>Ayani 2 JL. Parit Semben GG. Usman Husin</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>peped0857@gmail.com</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Keahlian / Skills -->
+        <section class="skills">
+            <h2>Keahlian & Hobi</h2>
+            <ul>
+                <li>Menggambar (Art & Illustration)</li>
+                <li>Menonton Anime</li>
+                <li>Kerja Sama Tim (Teamwork)</li>
+                <li>Problem Solving (Fokus pada Solusi)</li>
+            </ul>
+        </section>
+
+        <!-- Kontak / Media Sosial -->
+        <section class="contact">
+            <h2>Hubungi Saya</h2>
+            <p style="margin-bottom: 15px;">Mari berteman dan berkolaborasi di media sosial!</p>
+            <div class="links">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="mailto:peped0857@gmail.com">Kirim Email</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Rizki Ramadhan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        console.log("Selamat datang di website mewah Rizki Ramadhan!");
+    </script>
+</body>
+</html>
